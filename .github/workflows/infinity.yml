@@ -21,4 +21,4 @@ jobs:
           
           # Transmitimos por 6 horas y 5 minutos (21900 segundos)
           # Esto garantiza que la señal nunca se corte antes de que el siguiente ciclo empiece
-          ffmpeg -re -stream_loop -1 -i video.mp4 -t 21900 -c:v libx264 -preset veryfast -b:v 2500k -maxrate 2500k -bufsize 5000k -pix_fmt yuv420p -g 60 -c:a aac -b:a 128k -ar 44100 -f flv "rtmp://a.rtmp.youtube.com/live2/${{ secrets.YOUTUBE_KEY }}"
+          ffmpeg -re -stream_loop -1 -i video.mp4 -t 21900 -c:v libx264 -preset veryfast -b:v 2500k -maxrate 2500k -bufsize 5000k -pix_fmt yuv420p -g 30 -c:a aac -b:a 128k -ar 44100 -f flv rtmp://a.rtmp.youtube.com/live2/${{ secrets.YOUTUBE_KEY }}
