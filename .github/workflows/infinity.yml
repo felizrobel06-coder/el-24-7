@@ -17,7 +17,7 @@ jobs:
       - name: Descargar y Transmitir
         run: |
           # Descarga desde Dropbox (Asegúrate de que termine en dl=1)
-          wget -O video.mp4 https://www.dropbox.com/scl/fi/kfh4ztijoyujkao3bj170/video.mp4?rlkey=h8tn0dc61qtrkmszjsknwlc5i&st=gmir376v&dl=1
+          wget -O video.mp4 https://uc89216cd175fa357c488a1e112c.dl.dropboxusercontent.com/cd/0/get/C9yOrn3UogpTrPQj4qMqq-7mhw68ugMQjGZL8jz7M1moDeT5W09pKZo-kmnZ4P5OE0O6y4tZ9ZlJFHadMe8zp4vNPag-Pbb5uXASdH1m-XyD1eHnoktchSwY83rEYq2NC8NZWD1AQb_-kDNPZLZ4lHVMxMjA0YO3jY2ta4EBHJICiA/file?_download_id=82243637125891439934154968271774433662619793012572680985089724909&_log_download_success=1#
           
           # Transmitimos por 6 horas y 5 minutos (21900 segundos)
           # Esto garantiza que la señal nunca se corte antes de que el siguiente ciclo empiece
